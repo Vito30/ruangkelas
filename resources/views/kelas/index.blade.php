@@ -3,10 +3,11 @@
 @section('title','Ruangan')
 
 @section('container')
+<div style="background-image: url('images/kls1.png');">
     <div class="container">
       <div class="row">
         <div class="col-6">
-        <h1 class="mt-3">Daftar Ruangan</h1>
+        <h1 class="mt-3" >Daftar Ruangan</h1>
         <a href="/kelas/create" class="btn btn-primary my-3">Tambah Data Ruangan</a>
          @if (session('status'))
          <div class="alert alert-success">
@@ -23,6 +24,7 @@
 </ul>
         </div>
        </div>
+    </div>
     </div>
 @endsection
     

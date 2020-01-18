@@ -12,12 +12,26 @@
 */
 
 
+Route::get('/',function(){
+    return view('/auths/login');
+    
+});
+Route::get('/registration', 'RegistrationController@create');
+Route::post('registration', 'RegistrationController@store');
+
 Route::get('/','PagesController@home');
 Route::get('/about','PagesController@about');
 
-Route::get('/ruang','RuangController@index');
+Route::get('/login','AuthController@login')->name('login');
+Route::post('/postlogin','AuthController@postlogin');
+Route::get('/logout','AuthController@logout');
+
+
 
 //kelas
+Route::group(['middleware'=>'auth'],function(){
+Route::get('/dashboard','DashboardController@index');
+Route::get('/ruang','RuangController@index');
 Route::get('/kelas','KelasController@index');
 Route::get('/kelas/create','KelasController@create');
 Route::get('/kelas/{kelas}','KelasController@show');
@@ -25,3 +39,4 @@ Route::post('/kelas','KelasController@store');
 Route::delete('kelas/{kelas}','KelasController@destroy');
 Route::get('/kelas/{kelas}/edit','KelasController@edit');
 Route::patch('/kelas/{kelas}','KelasController@update');
+});

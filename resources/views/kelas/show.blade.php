@@ -3,6 +3,7 @@
 @section('title','Detail Ruangan')
 
 @section('container')
+<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
     <div class="container">
       <div class="row">
         <div class="col-6">
