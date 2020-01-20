@@ -30,6 +30,8 @@ Route::get('/logout','AuthController@logout');
 
 //kelas
 Route::group(['middleware'=>'auth'],function(){
+Route::get('user','UserController@index');
+Route::get('user/json','UserController@json');
 Route::get('/dashboard','DashboardController@index');
 Route::get('/ruang','RuangController@index');
 Route::get('/kelas','KelasController@index');

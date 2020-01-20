@@ -22,7 +22,10 @@
       <a class="nav-item nav-link active" href="{{ url('/') }}">Dashboard </a>
       <a class="nav-item nav-link" href="{{ url('/ruang') }}">Daftar</a>
       <a class="nav-item nav-link" href="{{ url('/kelas') }}">Detail</a>
-      <a class="nav-item nav-link" href="{{ url('/logout') }}">Logout</a>
+      <a class="nav-item nav-link" href="{{ url('/user') }}">User</a>
+      <form class="form-inline my-2 my-lg-0">
+      <a class="btn btn-outline-dark my-2 my-sm-0" href="{{ url('/logout') }}">Logout</a>
+     </form>
     </div>
   </div>
   </div>
