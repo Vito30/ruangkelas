@@ -16,11 +16,35 @@
             <p class="card-text">{{ $kelas->nama_gedung }}</p>
 
             <a href="{{ $kelas->id }}/edit" class="btn btn-primary">Edit</a>
-            <form action="/kelas/{{ $kelas->id }}" method="post" class="d-inline">
-            @method('delete')
-            @csrf
-            <button type="submit" class="btn btn-danger">Hapus</button>
-            </form>
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
+  Hapus
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Apakah Anda Yakin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Jika anda pilih ya makan akan terhapus
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+       <form action="{{ $kelas->id }}" method="post" class="d-inline">
+       {{ method_field('delete') }}
+       @csrf
+        <button type="submit" class="btn btn-primary">Ya</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
             <a href="/kelas" class="card-link">Kembali</a>
           </div>
         </div>

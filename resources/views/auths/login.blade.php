@@ -36,7 +36,7 @@
 					Account Login
 				</span>
 				<form class="login100-form validate-form p-b-33 p-t-5" action="/postlogin" method="post">
-                {{ csrf_field()}}
+                @csrf
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter email">
 						<input class="input100" type="email" name="email" placeholder="Email">

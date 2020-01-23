@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\User;
-use DataTables;
+use\App\User;
 use Illuminate\Http\Request;
+use DataTables;
 
 class UserController extends Controller
 {
