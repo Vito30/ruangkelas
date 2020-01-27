@@ -12,9 +12,10 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="{{ url('/') }}">Dashboard </a>
-      <a class="nav-item nav-link" href="{{ url('/ruang') }}">Daftar</a>
-      <a class="nav-item nav-link" href="{{ url('/kelas') }}">Detail</a>
-      <a class="nav-item nav-link" href="{{ url('/user') }}">User</a>
+      <a class="nav-item nav-link" href="{{ url('/ruang') }}">Tabel</a>
+      <a class="nav-item nav-link" href="{{ url('/user') }}">Daftar Ruangan</a>
+      <a class="nav-item nav-link" href="{{ url('/kelas') }}">Detail Ruangan</a>
+      <a class="nav-item nav-link" href="{{ url('/room') }}">Detail Pengguna</a>
       <form class="form-inline my-2 my-lg-0">
       <a class="btn btn-outline-d my-2 my-sm-0" href="{{ url('/logout') }}">Logout</a>
      </form>

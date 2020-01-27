@@ -44,7 +44,7 @@
     </div>
   </div>
 </div>
-            <a href="/rooms" class="btn btn-danger">Kembali</a>
+            <a href="/room" class="btn btn-success">Kembali</a>
           </div>
         </div>
         </div>

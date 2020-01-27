@@ -45,7 +45,7 @@
     </div>
   </div>
 </div>
-            <a href="/kelas" class="btn btn-danger">Kembali</a>
+            <a href="/kelas" class="btn btn-success">Kembali</a>
           </div>
         </div>
         </div>

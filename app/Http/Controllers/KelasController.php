@@ -42,7 +42,11 @@ class KelasController extends Controller
             'kode_ruangan'=> 'required|size:9',
             'nama_gedung'=> 'required'
         ]);
-        Kelas::create($request->all());
+        $kelas = new Kelas;
+        $kelas->nama_kelas = $request->nama_kelas;
+        $kelas->kode_ruangan = $request->kode_ruangan;
+        $kelas->nama_gedung = $request->nama_gedung;
+        $kelas->save();
         return redirect('/kelas')->with('status','Data Ruangan Berhasil Ditambahkan');
     }
 

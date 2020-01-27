@@ -25,7 +25,7 @@ class RoomsController extends Controller
      */
     public function create()
     {
-        //
+        return view('Room.create');
     }
 
     /**
@@ -36,7 +36,17 @@ class RoomsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'kelas_id'=> 'required',
+            'nama'=> 'required',
+            'angkatan'=> 'required'
+        ]);
+        $rooms = new Rooms;
+        $rooms->kelas_id = $request->kelas_id;
+        $rooms->nama = $request->nama;
+        $rooms->angkatan = $request->angkatan;
+        $rooms->save();
+        return redirect('/room')->with('status','Data Ruangan Berhasil Ditambahkan');
     }
 
     /**
@@ -58,7 +68,7 @@ class RoomsController extends Controller
      */
     public function edit(Rooms $rooms)
     {
-        //
+        return view('room.edit',compact('rooms'));
     }
 
     /**
@@ -70,7 +80,19 @@ class RoomsController extends Controller
      */
     public function update(Request $request, Rooms $rooms)
     {
-        //
+        $request->validate([
+            'kelas_id'=> 'required',
+            'nama'=> 'required',
+            'angkatan'=> 'required'
+        ]);
+        Rooms::where('id',$rooms->id)
+         ->update([
+             'kelas_id' =>$request->kelas_id,
+             'nama' =>$request->nama,
+             'angkatan' =>$request->angkatan
+
+         ]);
+         return redirect('/room')->with('status','Data Kelas Berhasil Diubah');
     }
 
     /**
@@ -80,7 +102,9 @@ class RoomsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Rooms $rooms)
-    {
-        //
+    { 
+        Rooms::destroy($rooms->id);
+        return redirect('/room')->with('status','Data Kelas Berhasil Dihapus');
+        
     }
 }

@@ -35,6 +35,7 @@
   </div>
  <button type="submit" class="btn btn-primary">Edit Data</button>
 </form>
+<a href="/kelas" class="btn btn-success my-3">Kembali</a>
         </div>
        </div>
     </div>

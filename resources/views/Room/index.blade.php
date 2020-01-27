@@ -7,8 +7,8 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-        <h1 class="mt-3" >Daftar Angkatan</h1>
-        <a href="/Room/create" class="btn btn-primary my-3">Tambah Data Ruangan</a>
+        <h1 class="mt-3" >Daftar Kelas</h1>
+        <a href="/room/create" class="btn btn-primary my-3">Tambah Data Ruangan</a>
          @if (session('status'))
          <div class="alert alert-success">
          {{ session('status') }}
