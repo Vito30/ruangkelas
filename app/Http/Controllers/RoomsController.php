@@ -14,7 +14,8 @@ class RoomsController extends Controller
      */
     public function index()
     {
-        //
+        $rooms = Rooms::all();
+        return view('room.index', compact('rooms'));
     }
 
     /**
@@ -46,7 +47,7 @@ class RoomsController extends Controller
      */
     public function show(Rooms $rooms)
     {
-        //
+        return view('room.show',compact('rooms'));
     }
 
     /**

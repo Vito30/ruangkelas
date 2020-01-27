@@ -28,11 +28,10 @@
     <table class="table table-bordered" id="users-table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Created At</th>
-                <th>Updated At</th>
+                <th>No</th>
+                <th>Nama Kelas</th>
+                <th>Kode Ruangan</th>
+                <th>Nama Gedung</th>
             </tr>
         </thead>
     </table>
@@ -46,11 +45,14 @@ $(function() {
         serverSide: true,
         ajax: 'user/json',
         columns: [
-            { data: 'id', name: 'id' },
-            { data: 'name', name: 'name' },
-            { data: 'email', name: 'email' },
-            { data: 'created_at', name: 'created_at' },
-            { data: 'updated_at', name: 'updated_at' }
+             {"data": "id",
+                    render: function (data, type, row, meta) {
+                        return meta.row + meta.settings._iDisplayStart + 1;
+                        }
+                    },
+            { data: 'nama_kelas', name: 'nama_kelas' },
+            { data: 'kode_ruangan', name: 'kode_ruangan' },
+            { data: 'nama_gedung', name: 'nama_gedung' }
         ]
     });
 });

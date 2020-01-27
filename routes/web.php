@@ -35,6 +35,8 @@ Route::get('user/json','UserController@json');
 Route::get('/dashboard','DashboardController@index');
 Route::get('/ruang','RuangController@index');
 Route::get('/kelas','KelasController@index');
+Route::get('/room','RoomsController@index');
+Route::get('/room/{rooms}','RoomsController@show');
 Route::get('/kelas/create','KelasController@create');
 Route::get('/kelas/{kelas}','KelasController@show');
 Route::post('/kelas','KelasController@store');
