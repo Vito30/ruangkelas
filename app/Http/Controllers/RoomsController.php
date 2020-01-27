@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\room;
+use App\Rooms;
 use Illuminate\Http\Request;
 
-class RoomController extends Controller
+class RoomsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class RoomController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\room  $room
+     * @param  \App\Rooms  $rooms
      * @return \Illuminate\Http\Response
      */
-    public function show(room $room)
+    public function show(Rooms $rooms)
     {
         //
     }
@@ -52,10 +52,10 @@ class RoomController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\room  $room
+     * @param  \App\Rooms  $rooms
      * @return \Illuminate\Http\Response
      */
-    public function edit(room $room)
+    public function edit(Rooms $rooms)
     {
         //
     }
@@ -64,10 +64,10 @@ class RoomController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\room  $room
+     * @param  \App\Rooms  $rooms
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, room $room)
+    public function update(Request $request, Rooms $rooms)
     {
         //
     }
@@ -75,10 +75,10 @@ class RoomController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\room  $room
+     * @param  \App\Rooms  $rooms
      * @return \Illuminate\Http\Response
      */
-    public function destroy(room $room)
+    public function destroy(Rooms $rooms)
     {
         //
     }

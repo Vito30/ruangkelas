@@ -14,6 +14,7 @@
            <th scope="col">No</th>
            <th scope="col">Nama Kelas</th>
            <th scope="col">Kode Ruangan</th>
+           <th scope="col">Angkatan</th>
            <th scope="col">Nama Gedung</th>
           </tr>
          </thead> 
@@ -23,6 +24,7 @@
            <th scope="row">{{ $loop->iteration }}</th>
            <td>{{$rng ->nama_kelas}}</td>
            <td>{{$rng ->kode_ruangan}}</td>
+           <td>{{$rng ->rooms['angkatan']}}</td>
            <td>{{$rng ->nama_gedung}}</td>
           </tr>
           @endforeach

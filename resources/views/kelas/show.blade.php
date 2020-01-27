@@ -32,7 +32,7 @@
         </button>
       </div>
       <div class="modal-body">
-        Jika anda pilih ya makan akan terhapus
+        Jika anda pilih ya maka akan terhapus
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
@@ -45,7 +45,7 @@
     </div>
   </div>
 </div>
-            <a href="/kelas" class="card-link">Kembali</a>
+            <a href="/kelas" class="btn btn-danger">Kembali</a>
           </div>
         </div>
         </div>

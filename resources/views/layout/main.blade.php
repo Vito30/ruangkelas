@@ -23,6 +23,7 @@
       <a class="nav-item nav-link" href="{{ url('/ruang') }}">Daftar</a>
       <a class="nav-item nav-link" href="{{ url('/kelas') }}">Detail</a>
       <a class="nav-item nav-link" href="{{ url('/user') }}">User</a>
+      <a class="nav-item nav-link" href="{{ url('/room') }}">room</a>
       <form class="form-inline my-2 my-lg-0">
       <a class="btn btn-outline-danger my-2 my-sm-0" href="{{ url('/logout') }}">Logout</a>
      </form>
