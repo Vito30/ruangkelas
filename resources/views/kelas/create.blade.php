@@ -11,7 +11,7 @@
         <form method="post" action="/kelas">
         @csrf
   <div class="form-group">
-    <label for="nama_kelas">Nama Kelas</label>
+    <label for="nama_kelas">Nama Ruangan</label>
     <input type="text" class="form-control @error('nama_kelas') is-invalid @enderror" id="nama_kelas" placeholder="Masukan Nama Kelas" name="nama_kelas" value="{{ old('nama_kelas')}}">
     @error('nama_kelas')
      <div class="invalid-feedback">{{ $message }}</div>

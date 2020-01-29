@@ -33,6 +33,8 @@
 </nav>
 
     @yield('container')
+    @yield('content')
+    @yield('scripts')
     
 
     <!-- Optional JavaScript -->

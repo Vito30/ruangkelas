@@ -11,8 +11,8 @@
         <form method="post" action="/room">
         @csrf
   <div class="form-group">
-    <label for="kelas_id">ID Kelas</label>
-    <input type="text" class="form-control @error('kelas_id') is-invalid @enderror" id="kelas_id" placeholder="Masukan Kode Ruangan" name="kelas_id" value="{{ old('kelas_id')}}">
+    <label for="kelas_id">ID Ruangan</label>
+    <input type="text" class="form-control @error('kelas_id') is-invalid @enderror" id="kelas_id" placeholder="Masukan ID Ruangan" name="kelas_id" value="{{ old('kelas_id')}}">
     @error('kelas_id')
      <div class="invalid-feedback">{{ $message }}</div>
     @enderror
@@ -27,7 +27,7 @@
  
   <div class="form-group">
     <label for="angkatan">Angkatan</label>
-    <input type="text" class="form-control @error('angkatan') is-invalid @enderror" id="angkatan" placeholder="Masukan Kode Ruangan" name="angkatan" value="{{ old('angkatan')}}">
+    <input type="text" class="form-control @error('angkatan') is-invalid @enderror" id="angkatan" placeholder="Masukan Angkatan" name="angkatan" value="{{ old('angkatan')}}">
     @error('angkatan')
      <div class="invalid-feedback">{{ $message }}</div>
     @enderror

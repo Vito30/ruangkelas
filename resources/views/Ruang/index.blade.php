@@ -12,7 +12,7 @@
          <thead class="thead-dark">
           <tr>
            <th scope="col">No</th>
-           <th scope="col">Nama Kelas</th>
+           <th scope="col">Nama Ruangan</th>
            <th scope="col">Kode Ruangan</th>
            <th scope="col">Kelas Pemakai</th>
            <th scope="col">Angkatan</th>

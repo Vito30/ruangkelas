@@ -11,8 +11,8 @@
           
         <div class="card" >
           <div class="card-body">
-            <h5 class="card-title">{{ $rooms->nama }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{ $rooms->angkatan }}</h6>
+            <h5 class="card-title">Nama Kelas : {{ $rooms->nama }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Angkatan : {{ $rooms->angkatan }}</h6>
 
             <a href="{{ $rooms->id }}/edit" class="btn btn-primary">Edit</a>
           <!-- Button trigger modal -->
